@@ -22,7 +22,12 @@ request.send()
           console.log(request.status);
           var div = document.createElement("tr");
             var mainContainer = document.getElementById(id);
-          div.innerHTML = "<td>"+query.id+"</td><td><input id='name"+query.id+"' placeholder='"+query.name+"' value='"+query.name+"'/></td><td><input id='email"+query.id+"' placeholder='"+query.email+"' value='"+query.email+"'/></td><td><input id='address"+query.id+"' placeholder='"+query.address+"' value='"+query.address+"'/></td>"+"<button onclick = 'deleterecord("+query.id+")' type = 'submit' value='Submit'>Delete</button>"+"<button onclick = 'update("+query.id+")'>Update</button>" ;
+          div.innerHTML = "<td>"+query.id+"</td>"+
+          "<td><input id='name"+query.id+"' placeholder='"+query.name+"' value='"+query.name+"'/></td>"+
+          "<td><input id='email"+query.id+"' placeholder='"+query.email+"' value='"+query.email+"'/></td>"+
+          "<td><input id='address"+query.id+"' placeholder='"+query.address+"' value='"+query.address+"'/></td>"+
+          "<td><button class='btn btn-danger' onclick = 'deleterecord("+query.id+")' type = 'submit' value='Submit'>Delete</button>"+
+          "<button class='btn btn-warning ml-2' onclick = 'update("+query.id+")'>Update</button></td>" ;
           mainContainer.appendChild(div)
         })
       } else {

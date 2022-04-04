@@ -1,0 +1,19 @@
+table input{
+    border: none;
+}
+table button{
+    width: 80px;
+    float: left;
+}
+#btn-con{
+    display: block;
+    width: 220px;
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    color: #28a745;
+}
+th{
+    color: #28a745;
+}
