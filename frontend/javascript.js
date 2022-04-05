@@ -30,8 +30,8 @@ function view(data, request, id){
         "<td><input id='modell"+query.id+"'   placeholder='"+query.modell+"'   value='"+query.modell+"'/></td>"+
         "<td><input id='evjarat"+query.id+"'  placeholder='"+query.evjarat+"'  value='"+query.evjarat+"'/></td>"+
         "<td><input id='muszaki"+query.id+"'  placeholder='"+query.muszaki+"'  value='"+query.muszaki+"'/></td>"+
-        "<td><button type='submit'class='btn btn-danger'   onclick = 'deleterecord("+query.id+")' >Törlés</button>"+
-        "<button type='submit'class='btn btn-warning ml-2' onclick = 'update("+query.id+")'       >Módosít</button></td>";
+        "<td><button type='submit'class='btn btn-danger'   onclick = 'deleterecord("+query.id+")' >Delete</button>"+
+        "<button type='submit'class='btn btn-warning ml-2' onclick = 'update("+query.id+")'       >Update</button></td>";
         mainContainer.appendChild(div);
       })
     } else {

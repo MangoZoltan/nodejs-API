@@ -8,38 +8,38 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
     <!--Egyéni CSS-->
     <link rel="stylesheet" href="style.css">
-    <title>Add Employee</title>
+    <title>Add Car</title>
 </head>
 <body class="bg-secondary">
     <div class="container-fluid bg-dark p-3 text-center">
-        <a class="text-white mx-1" href="./index.html">Áttekintés</a>
-        <a class="text-white mx-1" href="./add.html">Hozzáadás</a>
+        <a class="text-white mx-1" href="./index.html">Overview</a>
+        <a class="text-white mx-1" href="./add.html">Upload</a>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3 mx-auto bg-white my-4 p-4">
                 <form action = "" method="post">
-                    <h2 class="text-center mb-4">Autó feltöltése</h2>  
+                    <h2 class="text-center mb-4">Car Upload</h2>  
 
-                    <label for="rendszam">Rendszám:</label>
+                    <label for="rendszam">License plate number:</label>
                     <input type="text" class="form-control" id="rendszam" name="rendszam" placeholder="abc-123">
 
-                    <label for="tulaj">Tulajdonos neve:</label>
+                    <label for="tulaj">Owner's name:</label>
                     <input type="text" class="form-control" id="tulaj" name="tulaj" placeholder="John Doe">
 
-                    <label for="tipus">Típus:</label>
+                    <label for="tipus">Type:</label>
                     <input type="text" class="form-control" id="tipus" name="tipus" placeholder="Suzuki">
 
-                    <label for="modell">Modell:</label>
+                    <label for="modell">Model:</label>
                     <input type="text" class="form-control" id="modell" name="modell" placeholder="Swift II">
                     
-                    <label for="evjarat">Évjárat:</label>
+                    <label for="evjarat">Year:</label>
                     <input type="text" class="form-control" id="evjarat" name="evjarat" placeholder="2002">
                     
-                    <label for="muszaki">Műszaki érvényesség:</label>
+                    <label for="muszaki">Technical validity:</label>
                     <input type="text" class="form-control" id="muszaki" name="muszaki" placeholder="2023/03">
                     <br>
-                    <button class="btn btn-primary btn-block" onclick="sendPost()" id="sub" type="" >Feltöltés</button>
+                    <button class="btn btn-primary btn-block" onclick="sendPost()" id="sub" type="" >Upload</button>
                 </form>
             </div>
         </div>
