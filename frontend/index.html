@@ -15,8 +15,8 @@
   </head>
   <body class="bg-secondary">
     <div class="container-fluid bg-dark p-3 text-center">
-      <a class="text-white mx-1" href="./index.html">Overview</a>
-      <a class="text-white mx-1" href="./add.html">Add</a>
+      <a class="text-white mx-1" href="./index.html">Áttekintés</a>
+        <a class="text-white mx-1" href="./add.html">Hozzáadás</a>
     </div>
     <div class="container my-4 p-4 bg-white">
       <div class="row">
@@ -25,16 +25,20 @@
           <form action="" method="post">
             <div class="table-responsive">
             <table class="table">
-            <thead>
+              <thead>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Edit</th>
-            </thead >
-        <tbody id="view"></tbody>
-        </table>
-        </form>
+                <th>Rendszám</th>
+                <th>Tulaj</th>
+                <th>Típus</th>
+                <th>Modell</th>
+                <th>Évjárat</th>
+                <th id="muszaki-m">Műszaki érvényesség</th>
+                <th id="btn-con">Kezelés</th>
+              </thead>
+              <tbody id="overview"></tbody>
+            </table>
+          </div>
+          </form>
       <script src="javascript.js"></script> 
 </body>
 </html>

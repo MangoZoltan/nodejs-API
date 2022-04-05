@@ -12,23 +12,34 @@
 </head>
 <body class="bg-secondary">
     <div class="container-fluid bg-dark p-3 text-center">
-        <a class="text-white mx-1" href="./index.html">Overview</a>
-        <a class="text-white mx-1" href="./add.html">Add</a>
+        <a class="text-white mx-1" href="./index.html">Áttekintés</a>
+        <a class="text-white mx-1" href="./add.html">Hozzáadás</a>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3 mx-auto bg-white my-4 p-4">
-                <form  method="post">
-                    <label for="rendszam">Name:</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="John Doe">
+                <form action = "" method="post">
+                    <h2 class="text-center mb-4">Autó feltöltése</h2>  
 
-                    <label for="tulaj">Email:</label>
-                    <input class="form-control" type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+                    <label for="rendszam">Rendszám:</label>
+                    <input type="text" class="form-control" id="rendszam" name="rendszam" placeholder="abc-123">
 
-                    <label for="tipus">Address:</label>
-                    <input class="form-control" type="text" id="address" name="address" placeholder="1010 Akárhol, Bárhol u 12">
+                    <label for="tulaj">Tulajdonos neve:</label>
+                    <input type="text" class="form-control" id="tulaj" name="tulaj" placeholder="John Doe">
+
+                    <label for="tipus">Típus:</label>
+                    <input type="text" class="form-control" id="tipus" name="tipus" placeholder="Suzuki">
+
+                    <label for="modell">Modell:</label>
+                    <input type="text" class="form-control" id="modell" name="modell" placeholder="Swift II">
+                    
+                    <label for="evjarat">Évjárat:</label>
+                    <input type="text" class="form-control" id="evjarat" name="evjarat" placeholder="2002">
+                    
+                    <label for="muszaki">Műszaki érvényesség:</label>
+                    <input type="text" class="form-control" id="muszaki" name="muszaki" placeholder="2023/03">
                     <br>
-                    <button class="btn btn-success btn-block" onclick="sendPost()" id="sub" type="submit" value="Submit">Add</button>
+                    <button class="btn btn-primary btn-block" onclick="sendPost()" id="sub" type="" >Feltöltés</button>
                 </form>
             </div>
         </div>

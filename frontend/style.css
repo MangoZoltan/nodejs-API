@@ -1,5 +1,6 @@
 table input{
     border: none;
+    width: 130px;
 }
 table button{
     width: 80px;
@@ -16,4 +17,7 @@ label{
 }
 th{
     color: #28a745;
+}
+td:nth-child(7) input{
+    min-width: 160px;
 }
