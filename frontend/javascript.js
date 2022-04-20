@@ -1,6 +1,17 @@
 var url = "http://localhost:3000/overview";
 var id = "overview";
 
+/*
+vew() & update()
+id
+rendszam
+tulaj
+tipus
+modell
+evjarat
+muszaki
+*/
+
 async function generator(url, id) {
   var request = await new XMLHttpRequest();
   request.open('GET', url, true);
@@ -15,7 +26,6 @@ async function generator(url, id) {
 }
 
 function view(data, request, id){
-  
   if(id == "overview"){
     if (request.status >= 200 && request.status < 400) {
       data.forEach((query) => {
@@ -48,7 +58,7 @@ async function generate_html(){
 function deleterecord(id){
   const data = String(id);
 
-  navigator.sendBeacon('http://localhost:3000/removecar/'+ data);
+  navigator.sendBeacon('http://localhost:3000/remove/'+ data);
   console.log(data);
 }
 
@@ -63,10 +73,13 @@ function update(id){
     document.getElementById("evjarat"+id).value  + "|" +
     document.getElementById("muszaki"+id).value;
 
-  navigator.sendBeacon('http://localhost:3000/updatecar/'+ String(id) + "|" + document.getElementById("rendszam"+id).value +"|"+document.getElementById("tulaj"+id).value    + "|" +
+  navigator.sendBeacon('http://localhost:3000/update/'+ String(id) + "|" + 
+  document.getElementById("rendszam"+id).value +"|"+
+  document.getElementById("tulaj"+id).value    + "|" +
   document.getElementById("tipus"+id).value    + "|" +
   document.getElementById("modell"+id).value   + "|" +
-  document.getElementById("evjarat"+id).value  + "|" + document.getElementById("muszaki"+id).value +"|");
+  document.getElementById("evjarat"+id).value  + "|" + 
+  document.getElementById("muszaki"+id).value  +"|");
   console.log(data2);
 }
 

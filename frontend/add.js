@@ -9,6 +9,6 @@ function sendPost(){
     document.getElementById("muszaki").value;
     
     console.log(data);
-    navigator.sendBeacon('http://localhost:3000/addcar/'+ data);
+    navigator.sendBeacon('http://localhost:3000/add/'+ data);
     console.log(data);
     }
